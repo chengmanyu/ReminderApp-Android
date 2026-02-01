@@ -28,14 +28,17 @@
 8. **AlertDialog**：實現無障礙服務開啟的強制引導彈窗
 
 ## 專案結構
+以下是目前主要檔案與目錄的簡要說明：
+```text
 com.example.reminderapp/
 ├── MainActivity.java                    # 主頁面核心邏輯（權限、列表、事件、通知）
 ├── ReminderAccessibilityService.java    # 無障礙服務（監控前景 App、觸發通知）
 ├── AppRecyclerAdapter.java              # RecyclerView 適配器（列表顯示、搜尋、勾選）
 └── res/
     └── layout/
-        ├── activity_main.xml            # 主頁面布局（輸入框 + 搜尋 + RecyclerView + 按鈕）
-        └── app_list_item.xml            # 列表單項布局（圖示 + App 名稱 + 勾選框）
+        ├── activity_main.xml            # 主頁面布局（輸入框 + 搜尋 + 清單 + 按鈕）
+        └── app_list_item.xml            # 列表單項布局（圖示 + 名稱 + 勾選框）
+```
 
 ## 關鍵權限說明
 此APP的核心功能依賴2個必選權限，均會自動引導開啟：
