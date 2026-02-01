@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ReminderApp</string>
+    <string name="accessibility_service_desc">本服務會在您開啟指定應用程式時顯示提醒通知</string>
+</resources>
